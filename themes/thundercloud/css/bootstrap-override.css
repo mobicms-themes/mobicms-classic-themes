@@ -1,0 +1,25 @@
+.panel-default > .panel-heading {
+    background-color: #f7f7f7;
+    border-color: rgba(0, 0, 0, .2);
+    color: #4E5869;
+}
+
+.panel-default .list-group-item a {
+    color: #4E5869;
+}
+
+.badge {
+	float: right;
+}
+
+.badge-default {
+	background: #e4e4e4;
+	color: #727f94;
+}
+
+.btn-primary {
+	background: #7ec5d6;
+	color: #333;
+	border: 0;
+	font-weight: bold;
+}
