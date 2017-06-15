@@ -1,8 +1,46 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    background: #e4e4e4;
+    font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    padding: 15px;
+    background: #727f94;
+}
+
+.main-content {
+    background: #fff;
+    margin-bottom: 44px;
+}
+
+.header, .footer {
+    background: #4e5869;
+    color: #8d97a4;
+}
+
+.logo {
+    display: inline-block;
+    line-height: 55px;
+    padding-left: 10px;
+}
+
+.menu-icon {
+    font-size: 25px;
+    color: #7ec5d6;
+}
+
+.version {
+    font-weight: bold;
+}
+
+.version, .online {
+    padding: 10px 30px;
+}
 
 
 
