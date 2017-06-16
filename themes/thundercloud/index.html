@@ -30,7 +30,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="panel-group" id="accordion-mobile" role="tablist" aria-multiselectable="true">
+                <div class="menu panel-group" id="accordion-mobile" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading-info-mobile">
                             <h4 class="panel-title">
@@ -39,11 +39,11 @@
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse-info-mobile" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-info-mobile">
+                        <div id="collapse-info-mobile" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-info-mobile">
                             <div class="panel-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item"><a href="#">News</a> <span class="badge badge-default">20</span></li>
-                                    <li class="list-group-item"><a href="#">Information</a> <span class="badge badge-default">20</span></li>
+                                    <li class="list-group-item"><a href="#">News <span class="badge badge-default">20</span></a></li>
+                                    <li class="list-group-item"><a href="#">Information <span class="badge badge-default">20</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -112,6 +112,48 @@
                         </header>
                         <main class="main-content container">
                             <div class="row">
+                                <nav class="menu-top navbar navbar-default hidden-xs hidden-sm col-md-12">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">News</a></li>
+                                                        <li><a href="#">Information</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav navbar-nav">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Communication<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Guestbook</a></li>
+                                                        <li><a href="#">Forum</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav navbar-nav">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Downloads</a></li>
+                                                        <li><a href="#">Library</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav navbar-nav">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Users</a></li>
+                                                        <li><a href="#">Photo Albums</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
                                 <nav class="hidden-xs hidden-sm col-md-3">
                                     <div class="thumbnail">
                                         <img src="img/no_profile_image.jpg" alt="No Photo">
@@ -123,71 +165,60 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="menu panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading-info">
+                                            <div class="panel-heading" role="tab" id="heading-social">
                                                 <h4 class="panel-title">
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-info" aria-expanded="true" aria-controls="collapse-info">
-                                                        Information
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-social" aria-expanded="true" aria-controls="collapse-social">
+                                                        Social
                                                     </a>
                                                 </h4>
                                             </div>
-                                            <div id="collapse-info" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-info">
+                                            <div id="collapse-social" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-social">
                                                 <div class="panel-body">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><a href="#">News</a> <span class="badge badge-default">20</span></li>
-                                                        <li class="list-group-item"><a href="#">Information</a> <span class="badge badge-default">20</span></li>
+                                                        <li class="list-group-item"><a href="https://github.com/mobicms">Github</a></li>
+                                                        <li class="list-group-item"><a href="https://www.facebook.com/mobicms/">Facebook</a></li>
+                                                        <li class="list-group-item"><a href="https://twitter.com/mobicms/">Twitter</a></li>
+                                                        <li class="list-group-item"><a href="https://vk.com/mobicms/">VK</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading-communication">
+                                            <div class="panel-heading" role="tab" id="heading-social1">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-communication" aria-expanded="false" aria-controls="collapse-communication">
-                                                        Communication
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-social1" aria-expanded="true" aria-controls="collapse-social1">
+                                                        Social
                                                     </a>
                                                 </h4>
                                             </div>
-                                            <div id="collapse-communication" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-communication">
+                                            <div id="collapse-social1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-social1">
                                                 <div class="panel-body">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><a href="#">Guestbook</a></li>
-                                                        <li class="list-group-item"><a href="#">Forum</a></li>
+                                                        <li class="list-group-item"><a href="https://github.com/mobicms">Github</a></li>
+                                                        <li class="list-group-item"><a href="https://www.facebook.com/mobicms/">Facebook</a></li>
+                                                        <li class="list-group-item"><a href="https://twitter.com/mobicms/">Twitter</a></li>
+                                                        <li class="list-group-item"><a href="https://vk.com/mobicms/">VK</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading-useful">
+                                            <div class="panel-heading" role="tab" id="heading-social2">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-useful" aria-expanded="false" aria-controls="collapse-useful">
-                                                        Useful
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-social2" aria-expanded="true" aria-controls="collapse-social2">
+                                                        Social
                                                     </a>
                                                 </h4>
                                             </div>
-                                            <div id="collapse-useful" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-useful">
+                                            <div id="collapse-social2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-social2">
                                                 <div class="panel-body">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><a href="#">Downloads</a></li>
-                                                        <li class="list-group-item"><a href="#">Library</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading-community">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-community" aria-expanded="false" aria-controls="collapse-community">
-                                                        Community
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapse-community" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-community">
-                                                <div class="panel-body">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item"><a href="#">Users</a></li>
-                                                        <li class="list-group-item"><a href="#">Photo Albums</a></li>
+                                                        <li class="list-group-item"><a href="https://github.com/mobicms">Github</a></li>
+                                                        <li class="list-group-item"><a href="https://www.facebook.com/mobicms/">Facebook</a></li>
+                                                        <li class="list-group-item"><a href="https://twitter.com/mobicms/">Twitter</a></li>
+                                                        <li class="list-group-item"><a href="https://vk.com/mobicms/">VK</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

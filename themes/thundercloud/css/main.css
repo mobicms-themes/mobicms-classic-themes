@@ -8,6 +8,10 @@ body {
     font-size: 14px;
 }
 
+header {
+    height: 70px;
+}
+
 nav{
     padding: 15px;
     background: #727f94;
@@ -32,6 +36,95 @@ nav{
 .menu-icon {
     font-size: 25px;
     color: #7ec5d6;
+}
+
+.menu .panel {
+    border: 0;
+}
+
+.menu .list-group {
+    margin-bottom: 0;
+}
+
+.menu .list-group-item {
+    border: 0;
+    padding: 0;
+    margin-bottom: 1px;
+}
+
+.menu .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.menu .list-group-item a {
+    line-height: 38px;
+    display: block;
+    padding-left: 15px;
+}
+
+.menu .list-group-item a:hover {
+    background: #e4e4e4;
+}
+
+.menu .panel {
+    border-radius: 0;
+}
+
+.menu .panel-body {
+    padding: 0;
+}
+
+.menu .panel-heading {
+    padding: 0;
+}
+
+.menu .panel-heading a {
+    line-height: 38px;
+    display: block;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.menu .badge {
+    border-radius: 0;
+    line-height: 32px;
+}
+
+.menu .panel-heading a:hover,
+.menu .panel-heading a:focus {
+    text-decoration: none;
+}
+
+nav.menu-top {
+    padding: 0;
+}
+
+.menu-top.navbar {
+    margin-bottom: 0;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    background: #d4d9da;
+}
+
+.menu-top .navbar-nav>li>.dropdown-menu {
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.menu-top .collapse.navbar-collapse {
+    padding: 0;
+}
+
+.menu-top .container-fluid {
+    padding: 0;
+}
+
+.menu-top .dropdown:hover,
+.menu-top .dropdown:active {
+    background: #7ec5d6;
 }
 
 .version {
